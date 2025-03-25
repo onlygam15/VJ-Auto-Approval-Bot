@@ -39,7 +39,7 @@ async def op(_, m :Message):
         try:
             invite_link = await app.create_chat_invite_link(int(cfg.CHID))
         except:
-            await m.reply("**welcome to imtudu**")
+            await m.reply("**welcome to @imtudu**")
             return 
         key = InlineKeyboardMarkup(
             [[
